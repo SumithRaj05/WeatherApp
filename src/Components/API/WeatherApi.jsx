@@ -13,14 +13,14 @@ const FetchWeather = (props) => {
     };
 
     const error = () => {
-        alert("Please enable location to know the weather.");
+        alert("Please enable location and check internet connection to know the weather.");
     };
 
     useEffect(() => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(success, error);
         } else {
-            alert("Geolocation not supported");
+            alert("Geolocation not supported on the device.");
         }
     }, []);
 

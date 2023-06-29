@@ -1,6 +1,23 @@
 .loading {
+    position: absolute;
+    top: 0%;
+    left: 0%;
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.6;
+    z-index: 10;
+}
+
+.LoaderGif {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 100;
+}
+
+@media (max-width: 900px){
+    .LoaderGif{
+        left: 30%;
+    }
 }

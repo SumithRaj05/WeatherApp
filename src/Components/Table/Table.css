@@ -7,9 +7,7 @@ td {
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
+    margin: auto;
     width: 90%;
 }
 
