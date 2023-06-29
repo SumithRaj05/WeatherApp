@@ -6,4 +6,4 @@
   <li>Information includes: <bold>Temperature, Humidity, Pressure, Precipitation, Wind Speed, Wind Direction </bold> and <bold> UV index</bold></li>
 </ul>
 <br><br>
-Visit the website https://sr-weatherapp.netlify.app/
+Visit the website <a href="https://sr-weatherapp.netlify.app/">Here</a>
