@@ -17,11 +17,13 @@ const FetchWeather = (props) => {
     };
 
     useEffect(() => {
+        setLoading(true);
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(success, error);
         } else {
             alert("Geolocation not supported on the device.");
         }
+        setLoading(false);
     }, []);
 
     useEffect(() => {
@@ -32,12 +34,12 @@ const FetchWeather = (props) => {
                 .then((res) => res.json())
                 .then((data) => {
                     props.GetData(data);
+                    setLoading(false);
                 })
                 .catch((err) => {
                     console.log(err);
                 });
         }
-        setLoading(false);
     }, [lat, long]);
 
     return (
