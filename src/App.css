@@ -1,0 +1,10 @@
+h1 {
+  font-size: 35px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: white;
+  margin: 10px;
+}
+
+body {
+  background: black;
+}

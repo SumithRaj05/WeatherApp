@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+.TempBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.WeatherIcon {
+    width: 100px;
+    height: 100px;
+}
+
+.WeatherTemp {
+    font-family: 'Sawarabi Mincho', serif;
+    color: white;
+}
+
+.WeatherUpdated {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
