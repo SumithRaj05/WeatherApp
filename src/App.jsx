@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <h1>WEATHER QUEST</h1>
+      <h1>WEATHER WHISPERS :  Keeping You Ahead Of Nature's Rythm :)</h1>
       {
         Data &&
         <>

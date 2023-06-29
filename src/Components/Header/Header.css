@@ -1,4 +1,5 @@
 h2 {
+    letter-spacing: 1px;
     text-align: center;
     font-size: 25px;
     font-family: 'Noto Sans JP', sans-serif;
@@ -25,4 +26,20 @@ h2 {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     color: white;
+}
+
+@media (min-width: 900px){
+    h2{
+        font-size: 35px;
+    }
+    .WeatherIcon{
+        width: 150px;
+        height: 150px;
+    }
+    .WeatherTemp{
+        font-size: 32px;
+    }
+    .WeatherUpdated{
+        font-size: 19px;
+    }
 }
