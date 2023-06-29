@@ -25,8 +25,8 @@ const FetchWeather = (props) => {
     }, []);
 
     useEffect(() => {
+        setLoading(true);
         if (lat !== null && long !== null) {
-            setLoading(true);
             const url = `https://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_API_KEY}&q=${lat},${long}`;
             fetch(url)
                 .then((res) => res.json())
@@ -36,8 +36,8 @@ const FetchWeather = (props) => {
                 .catch((err) => {
                     console.log(err);
                 });
-            setLoading(false);
         }
+        setLoading(false);
     }, [lat, long]);
 
     return (
