@@ -29,7 +29,7 @@ const FetchWeather = (props) => {
     useEffect(() => {
         setLoading(true);
         if (lat !== null && long !== null) {
-            const url = `https://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_API_KEY}&q=${lat},${long}`;
+            const url = `https://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_API_KEY}&q=${lat},${long}`;
             fetch(url)
                 .then((res) => res.json())
                 .then((data) => {

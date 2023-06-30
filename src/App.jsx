@@ -4,6 +4,7 @@ import './App.css'
 import FeatchWeather from './Components/API/WeatherApi';
 import Header from './Components/Header/Header';
 import Table from './Components/Table/Table';
+import Forecast from './Components/Forecast/Forecast';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         Data &&
         <>
           <Header HeadData={Data} />
+          <Forecast DayData={Data} />
           <Table ExtData={Data} />
         </>
       }

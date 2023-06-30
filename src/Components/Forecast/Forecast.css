@@ -1,0 +1,51 @@
+.ForecastContainer {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: transparent transparent white transparent;
+}
+
+.ForecastContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+.ForecastContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.ForecastContainer::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 50px;
+}
+
+.ForecastContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ForecastElement {
+    color: white;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.ForecastTemperature {
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+.ForecastTime {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.ForecastWeather {
+    display: flex;
+}
+
+.ForecastText {
+    font-family: 'Noto Sans JP', sans-serif;
+}
